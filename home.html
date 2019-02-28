@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OLX - Bech Dayy!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="manifest" href="manifest.json">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" onclick="locationhome()">Olx pakistan</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" onclick="locationad()">Post an Ad</a>
+              </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#latestads">latest ads</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#search">search</a>
+              </li>
+              <!-- <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="subscribe"   onclick="subscribeToNotifications()">Subscribe</a>
+              </li>
+              <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="unsubscribe"  onclick="unsubscribeFromNotifications()" >Unubscribe</a>
+              </li> -->
+              <li class="nav-item mx-0 mx-lg-1" id="profile">
+                
+              </li>
+             
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center" >
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
+        <h1 class="text-uppercase mb-0">olx pakistan</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Buy and sell everything from used cars to mobile phones and computers, or search for services, jobs and more</h2>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="search">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Sell or Advertise anything Online</h2>
+        <hr class="star-dark mb-5">
+
+
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Seacrh</label>
+                <input class="form-control" id="input-search" type="text" placeholder="Search" style="padding-left:30px;">
+                <p class="help-block text-danger"></p>
+              </div>
+              
+            </div>
+            <br>
+            <h4 class="text-center text-uppercase text-secondary mb-0" style="text-align:center;">Popular Categories</h4>
+            <div class="container" id="btn-box">
+            <div class="form-group">
+                <button class="btn btn-primary btn-xl "  id="btn-grp" onclick="mobile()">Mobiles</button>
+                <button class="btn btn-primary btn-xl " id="btn-grp" onclick="electronics()">Electronics</button>
+                <button class="btn btn-primary btn-xl " id="btn-grp" onclick="bike()">Bikes</button>
+                <button class="btn btn-primary btn-xl " id="btn-grp" onclick="fashion()">Fashion</button>
+                <button class="btn btn-primary btn-xl " id="btn-grp" onclick="services()">Services</button>
+                <button class="btn btn-primary btn-xl " id="btn-grp" onclick="jobs()">Jobs</button>
+                
+                </div>
+              </div>
+      </div>
+    </section>
+
+    <!-- latestads Section -->
+    <section  id="latestads">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Latest ads</h2>
+        <hr class="star-dark mb-5">
+      <div class="container" id="main1">
+        
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Contact</h4>
+            <p class="lead mb-0">help@olx.com.pk
+              <br>080010101 (9:30am to 6:30pm)</p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/olxpakistan/">
+                  <i class="fa fa-fw fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.olx.com.pk/all-results/q-google-pixel/">
+                  <i class="fa fa-fw fa-google-plus"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/olx_pakistan?lang=en">
+                  <i class="fa fa-fw fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://pk.linkedin.com/company/olx-group">
+                  <i class="fa fa-fw fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://dribbble.com/tags/olx">
+                  <i class="fa fa-fw fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-uppercase mb-4">Terms of Use olx.com.pk</h4>
+            <p class="lead mb-0">Copyright © 2016. OLX Pakistan - All Rights Reserved - An OLX B.V. owned company.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Armanullah Khan</small>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+   
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCZcY4AfR_26chx8i87IsjIe0Jnz9NbqhU",
+        authDomain: "olxtask.firebaseapp.com",
+        databaseURL: "https://olxtask.firebaseio.com",
+        projectId: "olxtask",
+        storageBucket: "olxtask.appspot.com",
+        messagingSenderId: "762677721199"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/categorizeData.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html><html class=''>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+
+
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+<link rel="stylesheet" type="text/css" media="screen" href="css/buyerChat.css" />
+<link rel="manifest" href="manifest.json">
+<!-- <style class="cp-pen-styles">
+</style> -->
+<style>
+	#inbox-img{
+	height: 45px;
+	width: 50px;
+}
+
+</style>
+</head><body>
+<!-- 
+
+A concept for a chat interface. 
+
+Try writing a new message! :)
+
+
+Follow me here:
+Twitter: https://twitter.com/thatguyemil
+Codepen: https://codepen.io/emilcarlsson/
+Website: http://emilcarlsson.se/
+
+-->
+
+<div id="frame">
+	<div id="sidepanel">
+		<div id="profile">
+			
+		</div>
+		<div id="contacts" >
+			<ul id="conversation" >
+				
+				<!-- chat content -->
+			</ul>
+		</div>
+		
+	</div>
+	<div class="content" >
+		<div class="contact-profile"  id="data">
+			
+			
+		</div>
+		<div class="messages" >
+			<ul id="chat">
+				
+			</ul>
+		</div>
+		<div class="message-input">
+			<div class="wrap">
+			<input type="text" id="text" placeholder="Write your message..." />
+			
+			<button  class="submit" onclick='send()'><i class="fa fa-paper-plane" aria-hidden="true" ></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCZcY4AfR_26chx8i87IsjIe0Jnz9NbqhU",
+    authDomain: "olxtask.firebaseapp.com",
+    databaseURL: "https://olxtask.firebaseio.com",
+    projectId: "olxtask",
+    storageBucket: "olxtask.appspot.com",
+    messagingSenderId: "762677721199"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script src="js/buyerChat.js"></script>
+
+</body>
+
+</html>
+
+
+
+
